@@ -5,7 +5,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -20,7 +22,8 @@ label {
   padding: 0;
 }
 
-label, h5 {
+label,
+h5 {
   font-size: rem(14);
 
 }
@@ -31,7 +34,7 @@ fieldset {
   border: none;
 }
 
-input[type="number"] { 
+input[type="number"] {
   margin: 0;
   padding: rem(7) rem(18) rem(5) rem(28);
   border: none;
@@ -39,9 +42,12 @@ input[type="number"] {
   color: var(--very-dark-cyan);
   font-size: rem(24);
   text-align: end;
-  font-family: inherit; 
+  font-family: inherit;
   font-weight: inherit;
-  
+
+  &::placeholder {
+    color: var(--darker-grayish-cyan);
+  }
 }
 
 input[type="number"]::-webkit-inner-spin-button {
@@ -50,6 +56,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 button {
-  font-family: inherit; 
+  font-family: inherit;
   font-weight: inherit;
 }

@@ -21,7 +21,7 @@
     }
 
     &-input {
-      background: no-repeat scroll 16px 16px url(../images/icon-dollar.svg), var(--lighter-grayish-cyan);
+      background: no-repeat scroll rem(16) rem(16) url(../images/icon-dollar.svg), var(--lighter-grayish-cyan);
     }
   }
 
@@ -51,6 +51,21 @@
           color: var(--dark-grayish-cyan);
         }
       }
+    }
+  }
+
+  &__people {
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: rem(32);
+
+    &-title {
+      margin-bottom: rem(8);
+    }
+
+    &-input {
+      background: no-repeat scroll rem(16) rem(16) url(../images/icon-person.svg), var(--lighter-grayish-cyan);
     }
   }
 }
