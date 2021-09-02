@@ -1,0 +1,14 @@
+@use '../util'as *;
+
+.calculator {
+  background: var(--white);
+
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  padding: rem(32) rem(24);
+  border-radius: rem(25) rem(25) 0 0;
+
+  &__form {
+    padding: 0 rem(8);
+  }
+}

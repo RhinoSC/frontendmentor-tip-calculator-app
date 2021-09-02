@@ -1,0 +1,56 @@
+@use '../util'as *;
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--space-mono);
+}
+
+label {
+  margin: 0;
+  padding: 0;
+  font-size: rem(15);
+}
+
+h5 {
+  font-size: rem(15);
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+input[type="number"] { 
+  background: var(--lighter-grayish-cyan);
+  margin: 0;
+  padding: rem(8) rem(18) rem(4);
+  border: none;
+  border-radius: rem(8);
+  color: var(--very-dark-cyan);
+  font-size: rem(24);
+  text-align: end;
+  font-family: inherit; 
+  font-weight: inherit;
+  
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+button {
+  font-family: inherit; 
+  font-weight: inherit;
+}

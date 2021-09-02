@@ -1,0 +1,12 @@
+@use '../util'as *;
+
+.title {
+  color: var(--very-dark-cyan);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  // gap: 10px;
+  font-size: rem(11);
+  letter-spacing: rem(10);
+  margin-bottom: rem(41);
+}
