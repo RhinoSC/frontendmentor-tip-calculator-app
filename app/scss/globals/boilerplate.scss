@@ -18,11 +18,11 @@ body {
 label {
   margin: 0;
   padding: 0;
-  font-size: rem(15);
 }
 
-h5 {
-  font-size: rem(15);
+label, h5 {
+  font-size: rem(14);
+
 }
 
 fieldset {
@@ -32,9 +32,8 @@ fieldset {
 }
 
 input[type="number"] { 
-  background: var(--lighter-grayish-cyan);
   margin: 0;
-  padding: rem(8) rem(18) rem(4);
+  padding: rem(7) rem(18) rem(5) rem(28);
   border: none;
   border-radius: rem(8);
   color: var(--very-dark-cyan);
