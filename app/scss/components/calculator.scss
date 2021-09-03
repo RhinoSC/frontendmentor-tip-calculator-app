@@ -3,12 +3,19 @@
 .calculator {
   background: var(--white);
 
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
-  padding: rem(32) rem(24);
+  // padding: rem(32) rem(24);
+  padding: rem(32) 0;
   border-radius: rem(25) rem(25) 0 0;
 
   &__form {
+    max-width: rem(375);
+    padding: 0 rem(32);
+  }
+
+  &__results {
     padding: 0 rem(8);
   }
 }

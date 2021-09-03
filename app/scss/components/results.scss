@@ -1,1 +1,14 @@
 @use '../util'as *;
+
+
+.results {
+  background: var(--very-dark-cyan);
+  border-radius: rem(15);
+  color: var(--lighter-grayish-cyan);
+  margin: 0 rem(23);
+  padding: 0 rem(23);
+
+  &__tip {
+    margin-top: rem(46);
+  }
+}
