@@ -82,5 +82,9 @@
       margin-top: rem(143);
       font-size: rem(20);
     }
+
+    &:active {
+      filter: brightness(1.5);
+    }
   }
 }

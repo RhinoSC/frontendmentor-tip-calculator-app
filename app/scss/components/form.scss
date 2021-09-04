@@ -76,6 +76,11 @@
         font-size: rem(24);
       }
 
+      &.active {
+        background-color: var(--strong-cyan);
+        color: var(--very-dark-cyan);
+      }
+
       &#tip-value-custom {
         background: var(--lighter-grayish-cyan);
 
@@ -97,16 +102,27 @@
   }
 
   &__people {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
     margin-bottom: rem(32);
 
     &-title {
+      grid-column: 1 / 2;
       margin-bottom: rem(8);
     }
 
+    &-zero {
+      grid-column: 2 / 3;
+      text-align: end;
+      color: darkorange;
+      display: none;
+    }
+
     &-input {
+      grid-column: 1 / 3;
       background: no-repeat scroll rem(16) rem(16) url(../images/icon-person.svg), var(--lighter-grayish-cyan);
 
       &:focus {
