@@ -96,6 +96,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 - [Hide number input's arrows](https://stackoverflow.com/questions/3790935/can-i-hide-the-html5-number-input-s-spin-box/4298216#4298216) - This helped styling the inputs without that up/down arrows that are so ugly (and not useful in this case).
 - [Put an icon inside an input element](https://stackoverflow.com/questions/917610/put-icon-inside-input-element-in-a-form) - Ok, i was overthinking this but to be honest is really easy to do, but i needed help so this helped me a lot.
+- [Outline CSS](https://developer.mozilla.org/es/docs/Web/CSS/outline) - I was wondering if i had to change border's input, but no, it always been outline so this helped me.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
 
 **Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**

@@ -1,7 +1,6 @@
 @use '../util'as *;
 
 body {
-  min-height: 100vh;
   // display: flex;
   // flex-direction: column;
   // align-items: center;
@@ -15,4 +14,8 @@ body {
   align-items: center;
   justify-content: center;
   margin-top: rem(50);
+
+  @include breakpoint(large) {
+    margin-top: rem(140);
+  }
 }

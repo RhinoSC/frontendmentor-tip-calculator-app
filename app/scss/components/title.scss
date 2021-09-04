@@ -9,4 +9,8 @@
   font-size: rem(11);
   letter-spacing: rem(10);
   margin-bottom: rem(41);
+
+  @include breakpoint(large) {
+    margin-bottom: rem(75);
+  }
 }

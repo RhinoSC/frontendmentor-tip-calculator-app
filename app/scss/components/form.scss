@@ -6,10 +6,22 @@
 
   color: var(--dark-grayish-cyan);
   font-weight: 700 !important;
+  
 
   &__bill,
   &__tip {
     margin-bottom: rem(39);
+  }
+
+  &__bill,
+  &__tip,
+  &__people {
+
+    &-title {
+      @include breakpoint(large) {
+        font-size: rem(18);
+      }
+    }
   }
 
   &__bill {
@@ -20,8 +32,11 @@
     }
 
     &-input {
-      
       background: no-repeat scroll rem(16) rem(16) url(../images/icon-dollar.svg), var(--lighter-grayish-cyan);
+
+      &:focus {
+        outline-color: var(--strong-cyan)!important;
+      }
     }
   }
 
@@ -32,8 +47,19 @@
     gap: rem(16);
     align-items: center;
 
+    @include breakpoint(large) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: rem(22) repeat(2, 1fr);
+      column-gap: rem(14);
+      margin-bottom: rem(30);
+    }
+
     &-title {
       grid-column: 1 / 3;
+
+      @include breakpoint(large) {
+        grid-column: 1 / 4;
+      }
     }
 
     &-value {
@@ -44,11 +70,27 @@
       color: var(--lighter-grayish-cyan);
       font-size: rem(24);
 
+      @include breakpoint(large) {
+        width: rem(117);
+        height: rem(48);
+        font-size: rem(24);
+      }
+
       &#tip-value-custom {
         background: var(--lighter-grayish-cyan);
 
         &::placeholder {
           color: var(--dark-grayish-cyan);
+        }
+
+        &:focus {
+          outline-color: var(--strong-cyan)!important;
+        }
+
+        @include breakpoint(large) {
+          padding: 0;
+          padding-right: rem(18);
+          font-size: rem(24);
         }
       }
     }
@@ -66,6 +108,10 @@
 
     &-input {
       background: no-repeat scroll rem(16) rem(16) url(../images/icon-person.svg), var(--lighter-grayish-cyan);
+
+      &:focus {
+        outline-color: darkorange;
+      }
     }
   }
 }
