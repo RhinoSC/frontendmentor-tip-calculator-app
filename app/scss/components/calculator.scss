@@ -12,6 +12,12 @@
   padding: rem(32) 0;
   border-radius: rem(25) rem(25) 0 0;
 
+  @include breakpoint(medium) {
+    max-width: rem(920);
+    flex-direction: row;
+    border-radius: rem(25);
+  }
+
   @include breakpoint(large) {
     // width: rem(920);
     max-width: rem(920);
@@ -23,6 +29,12 @@
     max-width: rem(375);
     padding: 0 rem(32);
 
+    @include breakpoint(medium) {
+      width: 50%;
+      padding: 0 rem(48);
+      padding-right: rem(20);
+    }
+
     @include breakpoint(large) {
       min-width: rem(443);
       padding: 0 rem(48);
@@ -32,6 +44,10 @@
 
   &__results {
     padding: 0 rem(8);
+
+    @include breakpoint(medium) {
+      width: 50%;
+    }
 
     @include breakpoint(large) {
       min-width: rem(413);
