@@ -36,6 +36,7 @@
     }
 
     @include breakpoint(large) {
+      flex: 1 0 rem(443);
       min-width: rem(443);
       padding: 0 rem(48);
       padding-right: rem(20);

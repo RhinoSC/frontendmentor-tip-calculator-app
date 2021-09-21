@@ -11,7 +11,7 @@
 
   @include breakpoint(large) {
     min-width: rem(413);
-    flex: 1 0 auto;
+    flex: 1 0 rem(413);
     margin: 0 0;
     margin-right: rem(32);
     margin-left: rem(25);
